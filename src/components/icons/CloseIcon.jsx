@@ -4,7 +4,7 @@ import { AiOutlineClose} from "react-icons/ai";
 
 function CloseIcon(props ) {
   return (
-    <AiOutlineClose {...props} />
+    <AiOutlineClose {...props} className='text-quinary' />
   )
 }
 
