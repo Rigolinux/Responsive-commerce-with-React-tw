@@ -17,7 +17,7 @@ function SlideProducts() {
 
 
     //css images
-    const cssImg = "hidden md:block"
+    const cssImg = "hidden md:block md:rounded-md"
 
     //states
     const [imageSelected, setImageSelected] = React.useState(0);
@@ -34,7 +34,7 @@ function SlideProducts() {
   return (
     <section className="grid md:grid-cols-4 md:gap-4">
       <div className="relative md:col-span-4 ">
-        <img src={Imgs[imageSelected]} alt="" width="400" className="aspect[16/9]"/>
+        <img src={Imgs[imageSelected]} alt=""  className="aspect[16/9] md:aspect[16/12] w-full"/>
         <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between px-4 md:hidden">
         <button className="bg-quinary rounded-full" onClick={handleprev}><PrevIcon /></button>
         <button className="bg-quinary rounded-full" onClick={handlenext}><NextIcon /></button>

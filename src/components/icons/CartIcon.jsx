@@ -6,7 +6,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 function CartIcon(props) {
   return (
     <AiOutlineShoppingCart 
-    className='text-quinary'
+    
     {...props}
     />
   )
